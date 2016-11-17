@@ -66,7 +66,7 @@ class CarRenter
         return $this->rentedCar->getMakeAndModel();
       } else 
       {
-        return "I don't have the car";
+        return "Car not available";
       }
     }
 
@@ -112,7 +112,7 @@ class CarRenter
   writeln('carRenter1 returned the car');
   writeln('');
 
-  $carRenter2->rentCar());
+  $carRenter2->rentCar();
   writeln('carRenter2 Make and Model: ');
   writeln($carRenter1->getMakeAndModel());
   writeln('');
